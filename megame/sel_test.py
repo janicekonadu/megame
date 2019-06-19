@@ -369,7 +369,7 @@ webbrowser.open_new_tab(filename)
 IBM PERSONALITY INSOGHTS INCORPORATION
 --------------------------------------------------------------------------------------'''
 
-api_key = "evAFYVXiU_vGBnb5Rmj07FZfdlezEC7Pwp-h0o6cohdW"
+api_key = "[SECRET KEY]"
 ibm_url = "https://gateway.watsonplatform.net/personality-insights/api"
 
 personality_insights = PersonalityInsightsV3(
