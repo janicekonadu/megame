@@ -38,10 +38,10 @@ def getWorkData():
 	options.add_argument('--ignore-certificate-errors')
 	options.add_argument("--test-type")
 
-	options.add_argument("user-data-dir=C:/Users/jkona/AppData/Local/Google/Chrome/User Data/Megame")
+	options.add_argument("user-data-dir=[PATH]")
 
 	#options.binary_location = "/usr/bin/chromium"
-	driver = webdriver.Chrome("C:/megame/chromedriver.exe", chrome_options=options)
+	driver = webdriver.Chrome([CHROMEDRIVER PATH] , chrome_options=options)
 
 	'''-------------------------------------------------------------
 	    LOGINS & SNAPSHOTS
@@ -285,12 +285,12 @@ def createMessage():
 
 
 
-resume = Resume("Janice Konadu", "Full-Stack Developer", "(609) 356-9714", "jkonadu777@gmail.com")
+resume = Resume("Janice Konadu", "Full-Stack Developer", "[NUMBER]", "[EMAIL]")
 
 
-fb_url = "https://www.facebook.com/janice.konadu.3/about?lst=100000068690328%3A100000068690328%3A1550314256&section=education"
-dvp_url = "https://devpost.com/JaniceKonadu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-gh_url = "https://github.com/janicekonadu"
+fb_url = "[FACEBOOK URL]"
+dvp_url = "[DEVPOST URL]"
+gh_url = "[GITHUB URL]"
 
 
 
@@ -359,7 +359,7 @@ f.close()
 
 # Opens browser
 
-filename = 'C:/megame/' + 'megame.html'
+filename = '[MEGAME HTML PATH]' + 'megame.html'
 
 webbrowser.open_new_tab(filename)
 
